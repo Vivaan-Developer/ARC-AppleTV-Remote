@@ -1,0 +1,115 @@
+// !$*UTF8*$!
+{
+ archiveVersion = 1;
+ classes = {};
+ objectVersion = 55;
+ objects = {
+
+/* Begin PBXBuildFile section */
+ A1 = {isa = PBXBuildFile; fileRef = F1; };
+ A2 = {isa = PBXBuildFile; fileRef = F2; };
+ A6 = {isa = PBXBuildFile; fileRef = F6; };
+ A7 = {isa = PBXBuildFile; fileRef = F7; };
+ A8 = {isa = PBXBuildFile; fileRef = F8; };
+ A9 = {isa = PBXBuildFile; fileRef = F9; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+ F1 = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARCApp.swift; sourceTree = "<group>"; };
+ F2 = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+ F6 = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleTVClient.swift; sourceTree = "<group>"; };
+ F7 = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = apple_tv_service.py; sourceTree = "<group>"; };
+ F8 = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = Install_AppleTV_Support.command; sourceTree = "<group>"; };
+ F9 = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+ PROD = {isa = PBXFileReference; explicitFileType = wrapper.application; path = ARC.app; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+ ROOT = {isa = PBXGroup; children = (SRC, F8, PRODUCTS); sourceTree = "<group>"; };
+ SRC = {isa = PBXGroup; path = ARC; children = (F1,F2,F6,F7,F9); sourceTree = "<group>"; };
+ PRODUCTS = {isa = PBXGroup; name = Products; children = (PROD); sourceTree = "<group>"; };
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+ TARGET = {
+  isa = PBXNativeTarget;
+  buildConfigurationList = TCL;
+  buildPhases = (SOURCES, FRAMEWORKS, RESOURCES);
+  buildRules = ();
+  dependencies = ();
+  name = ARC;
+  productName = ARC;
+  productReference = PROD;
+  productType = "com.apple.product-type.application";
+ };
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+ PROJECT = {
+  isa = PBXProject;
+  attributes = {LastSwiftUpdateCheck = 1400; LastUpgradeCheck = 1400;};
+  buildConfigurationList = PCL;
+  compatibilityVersion = "Xcode 13.0";
+  developmentRegion = en;
+  hasScannedForEncodings = 0;
+  knownRegions = (en, Base);
+  mainGroup = ROOT;
+  productRefGroup = PRODUCTS;
+  projectDirPath = "";
+  projectRoot = "";
+  targets = (TARGET);
+ };
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+ SOURCES = {isa = PBXSourcesBuildPhase; buildActionMask = 2147483647; files = (A1,A2,A6); runOnlyForDeploymentPostprocessing = 0;};
+/* End PBXSourcesBuildPhase section */
+ FRAMEWORKS = {isa = PBXFrameworksBuildPhase; buildActionMask = 2147483647; files = (); runOnlyForDeploymentPostprocessing = 0;};
+ RESOURCES = {isa = PBXResourcesBuildPhase; buildActionMask = 2147483647; files = (A7,A8,A9); runOnlyForDeploymentPostprocessing = 0;};
+
+/* Begin XCBuildConfiguration section */
+ PDBG = {isa = XCBuildConfiguration; buildSettings = {ALWAYS_SEARCH_USER_PATHS = NO; USE_HEADERMAP = NO; MACOSX_DEPLOYMENT_TARGET = 12.0; SDKROOT = macosx;}; name = Debug;};
+ PREL = {isa = XCBuildConfiguration; buildSettings = {ALWAYS_SEARCH_USER_PATHS = NO; USE_HEADERMAP = NO; MACOSX_DEPLOYMENT_TARGET = 12.0; SDKROOT = macosx;}; name = Release;};
+ TDBG = {isa = XCBuildConfiguration; buildSettings = {
+  CODE_SIGN_STYLE = Automatic;
+  ALWAYS_SEARCH_USER_PATHS = NO;
+  USE_HEADERMAP = NO;
+  COMBINE_HIDPI_IMAGES = YES;
+  ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+  GENERATE_INFOPLIST_FILE = YES;
+  INFOPLIST_KEY_CFBundleDisplayName = "ARC Apple TV Remote";
+  INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+  INFOPLIST_KEY_NSLocalNetworkUsageDescription = "ARC searches for and controls Apple TV and LG TV devices on your local network.";
+  MACOSX_DEPLOYMENT_TARGET = 12.0;
+  MARKETING_VERSION = 1.0;
+  CURRENT_PROJECT_VERSION = 1;
+  PRODUCT_BUNDLE_IDENTIFIER = "com.arc.appletvremote";
+  PRODUCT_NAME = "$(TARGET_NAME)";
+  SWIFT_VERSION = 5.0;
+ }; name = Debug;};
+ TREL = {isa = XCBuildConfiguration; buildSettings = {
+  CODE_SIGN_STYLE = Automatic;
+  ALWAYS_SEARCH_USER_PATHS = NO;
+  USE_HEADERMAP = NO;
+  COMBINE_HIDPI_IMAGES = YES;
+  ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+  GENERATE_INFOPLIST_FILE = YES;
+  INFOPLIST_KEY_CFBundleDisplayName = "ARC Apple TV Remote";
+  INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+  INFOPLIST_KEY_NSLocalNetworkUsageDescription = "ARC searches for and controls Apple TV and LG TV devices on your local network.";
+  MACOSX_DEPLOYMENT_TARGET = 12.0;
+  MARKETING_VERSION = 1.0;
+  CURRENT_PROJECT_VERSION = 1;
+  PRODUCT_BUNDLE_IDENTIFIER = "com.arc.appletvremote";
+  PRODUCT_NAME = "$(TARGET_NAME)";
+  SWIFT_VERSION = 5.0;
+ }; name = Release;};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+ PCL = {isa = XCConfigurationList; buildConfigurations = (PDBG,PREL); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release;};
+ TCL = {isa = XCConfigurationList; buildConfigurations = (TDBG,TREL); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release;};
+/* End XCConfigurationList section */
+ };
+ rootObject = PROJECT;
+}

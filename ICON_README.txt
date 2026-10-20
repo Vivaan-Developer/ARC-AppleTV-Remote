@@ -1,0 +1,1 @@
+ARC custom icon included in Xcode asset catalog. Open ARC.xcodeproj and press Command+B. Then copy the newly built ARC.app from Xcode Products to Applications, replacing the old one. This package has not been compiled on macOS here.
